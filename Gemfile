@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Core gems
-gem 'rails', '3.2.14'
+gem 'rails', '3.2.16'
 
 # Database adapters
 gem 'pg'
@@ -24,6 +24,8 @@ gem 'paperclip'
 gem 'remotipart'
 gem 'jquery-rails'
 gem 'enumerize'
+gem 'arel'
+gem 'tzinfo'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -34,7 +36,7 @@ group :assets do
   gem 'execjs'
   gem 'eco'
   gem 'uglifier'
-  gem 'bootstrap-sass', '~> 2.3.0.1'
+  gem 'bootstrap-sass'
   gem 'gemoji'
 end
 
@@ -59,7 +61,6 @@ group :test do
   gem 'factory_girl_rails'
   gem 'simplecov', :require => false
   gem 'coveralls', :require => false
-
   gem 'poltergeist'
   gem 'launchy'
   gem 'capybara'
@@ -70,5 +71,5 @@ group :development, :test do
   gem 'guard'
   gem 'guard-rspec'
   gem 'database_cleaner'
-  gem 'jasmine', '~> 1.3.1'
+  gem 'jasmine'
 end
